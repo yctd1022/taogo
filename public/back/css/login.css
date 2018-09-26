@@ -1,0 +1,12 @@
+body {
+  background-color: #222d32;
+}
+.container .mt-150 {
+  margin-top: 150px;
+}
+.container .mt-150 .title-center {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
