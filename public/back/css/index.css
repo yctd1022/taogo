@@ -6,6 +6,7 @@
   top: 0;
   left: 0;
   z-index: 99;
+  transition: all 1s;
 }
 .tg_aside h1 {
   height: 50px;
@@ -47,10 +48,14 @@
 .tg_aside .nav li .child a {
   padding-left: 60px;
 }
+.tg_aside.hidemenu {
+  left: -180px;
+}
 .tg_mian {
   padding-left: 180px;
   padding-top: 50px;
   height: 1000px;
+  transition: all 1s;
 }
 .tg_mian .tg_topbar {
   height: 50px;
@@ -59,4 +64,24 @@
   position: fixed;
   top: 0;
   left: 0;
+  padding-left: 180px;
+  transition: all 1s;
+}
+.tg_mian .tg_topbar a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+}
+.tg_mian .tg_topbar.hidemenu {
+  padding-left: 0px;
+}
+.tg_mian.hidemenu {
+  padding-left: 0px;
+}
+.red {
+  color: #A94442;
 }
