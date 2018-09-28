@@ -1,0 +1,5 @@
+.container-fluid .tg_content .table tr > th,
+.container-fluid .tg_content .table tr > td {
+  text-align: center;
+  vertical-align: middle;
+}
