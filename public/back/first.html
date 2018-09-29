@@ -5,8 +5,10 @@
   <title>Title</title>
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
+  <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.css">
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/public.css">
+  <link rel="stylesheet" href="./css/first.css">
 </head>
 <body>
 <div class="tg_aside">
@@ -55,9 +57,45 @@
         <li class="active">一级分类</li>
       </ol>
     </div>
-  </div>
-  <div class="tg_content">
+    <div class="tg_content">
+      <button id="addbtn-first" class="btn btn-default mb">添加分类</button>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th width=20%>序号</th>
+            <th width=80%>一级分类名</th>
+          </tr>
+        </thead>
+        <tbody>
 
+        </tbody>
+      </table>
+      <div class="pull-right">
+        <ul class="pagination" id="paginator"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="addfirst">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <form id="form">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+          <h4 class="modal-title">添加分类</h4>
+        </div>
+        <div class="modal-body">
+        <div class="form-group">
+          <input type="text" class="form-control" name="categoryName" id="categoryName" placeholder="请输入一级分类">
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="submit" class="btn btn-primary" id="add">添加</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 
@@ -78,9 +116,21 @@
     </div>
   </div>
 </div>
+<script type="text/html" id="tmp">
+  {{each rows v i}}
+    <tr>
+      <td>{{i + 1 + (page-1) * size}}</td>
+      <td>{{v.categoryName}}</td>
+    </tr>
+  {{/each}}
+</script>
 <script type="text/javascript" src="./lib/jquery/jquery.js"></script>
 <script type="text/javascript" src="./lib/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="./lib/nprogress/nprogress.js"></script>
+<script type="text/javascript" src="./lib/bootstrap-paginator/bootstrap-paginator.js"></script>
+<script type="text/javascript" src="./lib/bootstrap-validator/js/bootstrapValidator.js" charset="UTF-8"></script>
+<script type="text/javascript" src="./lib/artTemplate/template-web.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/first.js"></script>
 </body>
 </html>

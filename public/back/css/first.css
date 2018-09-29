@@ -1,0 +1,10 @@
+.tg_content .mb {
+  margin-bottom: 20px;
+}
+.tg_content .table thead > tr > th,
+.tg_content .table tbody,
+.tg_content .table tr,
+.tg_content .table td {
+  text-align: center;
+  vertical-align: middle;
+}
