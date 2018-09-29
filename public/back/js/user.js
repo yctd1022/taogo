@@ -4,6 +4,8 @@
 $(function () {
   var currentPage = 1;
   var pageSize = 4;
+  let ids;
+  let isDelete;
   render();
   function render() {
     $.ajax({
@@ -33,6 +35,34 @@ $(function () {
         })
       }
     })
-  }
+  };
+  $("tbody").on("click",".btn",function () {
+    //console.log("11");
+    $("#btn_modal").modal("show");
+    ids = $(this).parent().attr("data-id");
+    isDelete = $(this).hasClass("btn-danger") ? 0 : 1;
+    //console.log(id,isDelete);
+  });
+  $("#submitBtn").on("click", function () {
+    $.ajax({
+      type: "post",
+      url: "/user/updateUser",
+      data: {
+        id:ids,
+        isDelete:isDelete
+      },
+      dataType: "json",
+      success: function (info) {
+       //console.log(info);
+        if(info.success){
+          $("#btn_modal").modal("hide");
+          render();
+        }
+      }
+    })
+  })
+
+
+
 })
 
