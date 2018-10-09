@@ -1,0 +1,45 @@
+.tg_mian {
+  padding: 10px;
+}
+.tg_mian .search {
+  position: relative;
+}
+.tg_mian .search input {
+  border: 1px solid #2aabd2;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  border-radius: 5px;
+}
+.tg_mian .search button {
+  width: 70px;
+  height: 42px;
+  font-size: 16px;
+  background-color: #2aabd2;
+  position: absolute;
+  right: 0px;
+  top: -1px;
+  border-radius: 0 5px 5px 0;
+}
+.tg_mian .history .title {
+  color: #666;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.tg_mian .history .content {
+  border: 1px dashed red;
+}
+.tg_mian .history .content li {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px dashed red;
+  padding-left: 10px;
+}
+.tg_mian .history .content li:last-child {
+  border-bottom: none;
+}
+.tg_mian .history .content li i {
+  line-height: 30px;
+}
