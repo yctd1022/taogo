@@ -1,0 +1,27 @@
+.tg_mian .nav {
+  padding: 10px;
+}
+.tg_mian .nav li {
+  float: left;
+  width: 33.3%;
+}
+.tg_mian .nav li a {
+  display: block;
+}
+.tg_mian .product {
+  padding: 10px;
+}
+.tg_mian .product li {
+  width: 48%;
+  float: left;
+  margin-top: 4%;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+.tg_mian .product li:nth-child(2n-1) {
+  margin-right: 4%;
+}
+.tg_mian .product li p span {
+  color: red;
+}
