@@ -1,0 +1,15 @@
+.tg_mian .category_left {
+  width: 90px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.tg_mian .category_left li {
+  width: 90px;
+  height: 50px;
+}
+.tg_mian .category_right {
+  height: 100%;
+  background-color: pink;
+  overflow: hidden;
+}
