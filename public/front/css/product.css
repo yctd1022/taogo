@@ -31,6 +31,10 @@
   border: 1px solid #cccccc;
   font-size: 15px;
 }
+.tg_container .tg_mian .size span.current {
+  background-color: orange;
+  color: #ffffff;
+}
 .tg_container .tg_mian .number {
   padding: 10px;
   border-top: 1px solid #cccccc;
