@@ -93,7 +93,7 @@ $(function() {
   //    (2)点击的a标签有current类, 切换箭头方向
   // 3. 调用 render 重新渲染
 
-  $('.lt_sort a[data-type]').click(function() {
+    $('.lt_sort a[data-type]').click(function() {
 
     if ( $(this).hasClass("current") ) {
       // 有类, 切换箭头方向

@@ -6,11 +6,7 @@ $(function () {
   //getHistory();
   //console.log(getHistory());
   //1.搜索历史记录渲染
-  function getHistory() {
-    var jsonStr = localStorage.getItem("search_list") || "[]";
-    var arr = JSON.parse(jsonStr);
-    return arr;
-  }
+
 
 
   function render() {
