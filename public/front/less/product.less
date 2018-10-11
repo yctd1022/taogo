@@ -1,0 +1,57 @@
+@padding: 10px;
+@xian: 1px solid #ccc;
+.tg_container{
+  .tg_mian{
+    font-size: 17px;
+    .title{
+      padding: @padding;
+      border-top: @xian;
+    }
+    .prices{
+      padding: @padding;
+      border-top: @xian;
+      .price{
+        color: red;
+        font-size: 20px;
+      }
+      .oldPrice{
+        color: #666;
+        font-size: 15px;
+      }
+    }
+    .size{
+      padding: @padding;
+      border-top: @xian;
+      span{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        display: inline-block;
+        margin: 3px 0;
+        border: @xian;
+        font-size: 15px;
+      }
+    }
+    .number{
+      padding: @padding;
+      border-top: @xian;
+      span{
+        font-size: 15px;
+      }
+    }
+    .price{
+      padding: @padding;
+      border-top: @xian;
+    }
+  }
+  .tg_footer{
+    background-color: #EFEFF4;
+    height: 55px;
+    border-top: 1px solid red;
+    padding: 10px;
+    a{
+      padding: @padding;
+    }
+  }
+}

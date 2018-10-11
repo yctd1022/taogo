@@ -71,7 +71,7 @@
   <ul>
     {{each data v i}}
       <li>
-        <a href="">
+        <a href="product.html?productId={{v.id}}">
           <img src="{{v.pic[0].picAddr}}" alt="">
           <p class="mui-ellipsis-2">{{v.proName}}</p>
           <p><span>¥{{v.price}}</span><del>¥{{v.oldPrice}}</del></p>

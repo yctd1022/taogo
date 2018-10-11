@@ -1,0 +1,53 @@
+.tg_container .tg_mian {
+  font-size: 17px;
+}
+.tg_container .tg_mian .title {
+  padding: 10px;
+  border-top: 1px solid #cccccc;
+}
+.tg_container .tg_mian .prices {
+  padding: 10px;
+  border-top: 1px solid #cccccc;
+}
+.tg_container .tg_mian .prices .price {
+  color: red;
+  font-size: 20px;
+}
+.tg_container .tg_mian .prices .oldPrice {
+  color: #666;
+  font-size: 15px;
+}
+.tg_container .tg_mian .size {
+  padding: 10px;
+  border-top: 1px solid #cccccc;
+}
+.tg_container .tg_mian .size span {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  display: inline-block;
+  margin: 3px 0;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+}
+.tg_container .tg_mian .number {
+  padding: 10px;
+  border-top: 1px solid #cccccc;
+}
+.tg_container .tg_mian .number span {
+  font-size: 15px;
+}
+.tg_container .tg_mian .price {
+  padding: 10px;
+  border-top: 1px solid #cccccc;
+}
+.tg_container .tg_footer {
+  background-color: #EFEFF4;
+  height: 55px;
+  border-top: 1px solid red;
+  padding: 10px;
+}
+.tg_container .tg_footer a {
+  padding: 10px;
+}
