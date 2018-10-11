@@ -1,0 +1,32 @@
+.tg_mian .cart_item {
+  height: 110px;
+  padding: 10px 15px;
+}
+.tg_mian .cart_item .mui-table-cell {
+  display: block;
+}
+.tg_mian .cart_item .cart_img {
+  width: 60px;
+  height: 90px;
+  float: left;
+}
+.tg_mian .cart_item .cart_info {
+  overflow: hidden;
+  height: 90px;
+  padding: 0 10px;
+}
+.tg_mian .cart_item .cart_info .pro_name {
+  color: #000;
+}
+.tg_mian .cart_item .cart_info .price {
+  color: red;
+}
+.tg_mian .cart_item .cart_info .oldPrice {
+  text-decoration: line-through;
+}
+.tg_mian .lt_size {
+  text-align: left;
+}
+.tg_mian .lt_num {
+  text-align: left;
+}
