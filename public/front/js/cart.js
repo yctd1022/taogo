@@ -49,9 +49,40 @@ $(function () {
       }
     })
   });
-  $('.lt_main').on("tap", ".btn_edit", function () {
+  $('.mui-table-view').on("tap", ".btn_edit", function () {
     var obj = this.dataset;
     var id = obj.id;
     console.log(obj);
-  })
+    var htmlStr = template( "editTpl", obj );
+    htmlStr = htmlStr.replace( /\n/g, "" );
+    //console.log(htmlStr)
+    mui.confirm(htmlStr,"编辑商品", ["确认", "取消"], function (e) {
+      if(e.index == 0){
+        var size = $('.lt_size span.current').text();
+        var num = $('.mui-numbox-input').val();
+        $.ajax({
+          type: "post",
+          url: "/cart/updateCart",
+          data: {
+            id: id,
+            size: size,
+            num: num
+          },
+          dataType: "json",
+          success: function (info) {
+            if(info.success){
+              render();
+            }
+          }
+        })
+      }
+    })
+    mui(".mui-numbox").numbox();
+  });
+  //$("body").on("click",".lt_size span", function () {
+  //  $(this).addClass("current").siblings().removeClass("current");
+  //})
+  $('body').on("tap", ".lt_size span", function() {
+    $(this).addClass("current").siblings().removeClass("current");
+  });
 })

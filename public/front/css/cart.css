@@ -30,3 +30,15 @@
 .tg_mian .lt_num {
   text-align: left;
 }
+.lt_size span {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  border: 1px solid #ccc;
+}
+.lt_size span.current {
+  background-color: orange;
+  color: #fff;
+}
