@@ -28,9 +28,11 @@ $(function () {
     $(this).addClass("current").siblings().removeClass("current");
   });
   $("#addCart").on("click", function () {
-    var sizes = $(".size span").text();
+    var sizes = $(".size span.current").text();
     var number = $('.mui-numbox-input').val();
+    //var num = $('.mui-numbox-input').val();
     var iproductId = getSearch().productId;
+    console.log(number);
     if(!sizes){
       mui.toast("请选择尺码");
       return;
