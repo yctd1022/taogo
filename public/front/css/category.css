@@ -1,3 +1,6 @@
+body {
+  background-color: #efeff4;
+}
 .tg_mian .category_left {
   width: 90px;
   height: 100%;
@@ -8,8 +11,43 @@
   width: 90px;
   height: 50px;
 }
+.tg_mian .category_left li a {
+  display: block;
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #E3E4E5;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.tg_mian .category_left li a.current {
+  background-color: #fff;
+  border-right: none;
+}
 .tg_mian .category_right {
   height: 100%;
-  background-color: pink;
   overflow: hidden;
+  position: relative;
+}
+.tg_mian .category_right li {
+  float: left;
+  width: 33.3%;
+}
+.tg_mian .category_right li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.tg_mian .category_right li a img {
+  width: 70px;
+  height: 50px;
+  margin: 0 auto;
+}
+.tg_mian .category_right li a p {
+  text-align: center;
+}
+.tips {
+  padding: 10px;
 }
